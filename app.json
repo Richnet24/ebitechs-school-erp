@@ -1,0 +1,45 @@
+{
+  "name": "Ebitechs School ERP",
+  "description": "Système de gestion scolaire complet",
+  "keywords": ["laravel", "school", "erp", "education"],
+  "website": "https://ebitechs-school-erp.herokuapp.com",
+  "repository": "https://github.com/ton-username/ebitechs-school-erp",
+  "logo": "https://via.placeholder.com/150x150/667eea/ffffff?text=Ebitechs",
+  "success_url": "/admin/login",
+  "scripts": {
+    "postdeploy": "php artisan migrate --force && php artisan db:seed --force"
+  },
+  "env": {
+    "APP_ENV": {
+      "description": "Environment de l'application",
+      "value": "production"
+    },
+    "APP_DEBUG": {
+      "description": "Mode debug",
+      "value": "false"
+    },
+    "APP_KEY": {
+      "description": "Clé de l'application Laravel",
+      "generator": "secret"
+    },
+    "APP_NAME": {
+      "description": "Nom de l'application",
+      "value": "Ebitechs School ERP"
+    },
+    "DB_CONNECTION": {
+      "description": "Type de base de données",
+      "value": "sqlite"
+    },
+    "MAIL_MAILER": {
+      "description": "Service d'email",
+      "value": "log"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": []
+}

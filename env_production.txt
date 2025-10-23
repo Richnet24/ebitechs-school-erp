@@ -1,0 +1,27 @@
+APP_NAME="Ebitechs School ERP"
+APP_ENV=production
+APP_KEY=
+APP_DEBUG=false
+APP_TIMEZONE=UTC
+APP_URL=https://ton-domaine.com
+
+DB_CONNECTION=sqlite
+DB_DATABASE=/home/ton_compte/app/database/database.sqlite
+
+SESSION_DRIVER=database
+CACHE_STORE=database
+QUEUE_CONNECTION=database
+
+# Configuration email (à remplir selon ton hébergeur)
+MAIL_MAILER=smtp
+MAIL_HOST=mail.ton-domaine.com
+MAIL_PORT=587
+MAIL_USERNAME=noreply@ton-domaine.com
+MAIL_PASSWORD=ton_mot_de_passe_email
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=noreply@ton-domaine.com
+MAIL_FROM_NAME="${APP_NAME}"
+
+# Configuration de cache pour la production
+CACHE_STORE=file
+SESSION_LIFETIME=120

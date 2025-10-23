@@ -1,0 +1,13 @@
+APP_NAME="Ebitechs School ERP"
+APP_ENV=local
+APP_KEY=base64:YOUR_APP_KEY_HERE
+APP_DEBUG=true
+APP_TIMEZONE=UTC
+APP_URL=http://localhost
+
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+
+SESSION_DRIVER=database
+CACHE_STORE=database
+QUEUE_CONNECTION=database
