@@ -2,10 +2,10 @@
   "name": "Ebitechs School ERP",
   "description": "Système de gestion scolaire complet",
   "keywords": ["laravel", "school", "erp", "education"],
-  "website": "https://ebitechs-school-erp.herokuapp.com",
-  "repository": "https://github.com/ton-username/ebitechs-school-erp",
+  "website": "https://ebitechs-school-erp-richnet24.herokuapp.com",
+  "repository": "https://github.com/Richnet24/ebitechs-school-erp",
   "logo": "https://via.placeholder.com/150x150/667eea/ffffff?text=Ebitechs",
-  "success_url": "/admin/login",
+  "success_url": "/",
   "scripts": {
     "postdeploy": "php artisan migrate --force && php artisan db:seed --force"
   },
@@ -25,6 +25,10 @@
     "APP_NAME": {
       "description": "Nom de l'application",
       "value": "Ebitechs School ERP"
+    },
+    "APP_URL": {
+      "description": "URL de l'application",
+      "value": "https://ebitechs-school-erp-richnet24.herokuapp.com"
     },
     "DB_CONNECTION": {
       "description": "Type de base de données",
